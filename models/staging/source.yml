@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: SRC_SAP
+    database: EDW_DATALAKE_DEV_DB
+    schema: SRC_SAP
+    tables:
+      - name: T_CASES
+      - name: T_CV_HQ_VIEW_PO
+      - name: T_CV_HQ_VIEW_INV
