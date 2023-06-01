@@ -1,11 +1,3 @@
-{{
-config(
-    database='EDW_DWH_DEV_DB',
-    schema='DP_CASES',
-    materialized='table',
-    )
-}} 
-
 with
     po as (
         select
