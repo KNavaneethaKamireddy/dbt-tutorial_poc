@@ -2,16 +2,16 @@ name: schedule_dbt_job
 
 on:
   workflow_dispatch:
-  schedule:
-    # run at 7AM every single day
-    # https://crontab.guru <-- for generating CRON expression
-    - cron: "30 * * * 1-5"
+    schedule:
+      # run at 7AM every single day
+      # https://crontab.guru <-- for generating CRON expression
+      - cron: "30 * * * 1-5"
   push:
-  branches:
-    # run on push to development branch
-    - '!main'
+    branches:
+    # run on push to main branch
+      - '!main'
 
-env:
+  env:
     DBT_PROFILES_DIR: ./
 
     DBT_SNOWFLAKE_USERNAME: ${{ secrets.DBT_SNOWFLAKE_USERNAME }}
