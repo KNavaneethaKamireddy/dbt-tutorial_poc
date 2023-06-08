@@ -1,0 +1,13 @@
+default:
+  outputs:
+    dev:
+      account: znyxcvy-dj27111
+      database: EDW_DWH_DEV_DB
+      password: Neethu@2425
+      role: SYSADMIN
+      schema: DP_CASES
+      threads: 4
+      type: snowflake
+      user: NAVANEETHA
+      warehouse: ENT_DWH_TRANSFORM_DEV_WH
+  target: dev
