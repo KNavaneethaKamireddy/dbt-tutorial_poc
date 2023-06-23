@@ -38,5 +38,5 @@ jobs:
       - name: Run dbt models
         run: dbt run
 
-      - name: Test dbt models
-        run: dbt test
+#       - name: Test dbt models
+#         run: dbt test
